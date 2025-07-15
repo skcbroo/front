@@ -38,7 +38,7 @@ export default function DetalhesCredito() {
             return;
         }
 
-        const numeroEmpresa = "556135913167"; // Substitua pelo número real da empresa
+        const numeroEmpresa = "5561996204646"; // Substitua pelo número real da empresa
         const mensagem = encodeURIComponent(
             `Olá, gostaria de adquirir cotas do crédito judicial:\n\n` +
             ` Processo: ${credito.numeroProcesso}\n` +
