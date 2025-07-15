@@ -19,7 +19,7 @@ export default function AdminDashboard() {
         }
 
         axios
-            .get("${import.meta.env.VITE_API_URL}/api/admin/dashboard", {
+            .get(`${import.meta.env.VITE_API_URL}/api/admin/dashboard`, {
                 headers: { Authorization: `Bearer ${token}` },
             })
             .then((res) => {

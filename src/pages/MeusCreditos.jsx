@@ -5,7 +5,7 @@ export default function MeusCreditos() {
     const [creditos, setCreditos] = useState([]);
 
     useEffect(() => {
-        fetch('/api/creditos/adquiridos')
+       fetch(`${import.meta.env.VITE_API_URL}/api/creditos/adquiridos`)
             .then(res => res.json())
             .then(setCreditos);
     }, []);

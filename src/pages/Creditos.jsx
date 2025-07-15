@@ -8,7 +8,7 @@ export default function Creditos() {
     const [creditos, setCreditos] = useState([]);
 
     useEffect(() => {
-        axios.get("${import.meta.env.VITE_API_URL}/api/creditos")
+        axios.get(`${import.meta.env.VITE_API_URL}/api/creditos`)
             .then((res) => setCreditos(res.data))
             .catch((err) => console.error("Erro ao buscar créditos:", err));
     }, []);

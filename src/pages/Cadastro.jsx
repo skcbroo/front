@@ -12,7 +12,7 @@ export default function Cadastro() {
     async function handleCadastro(e) {
         e.preventDefault();
         try {
-            await axios.post("${import.meta.env.VITE_API_URL}/api/auth/register", {
+            await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/register`, {
                 nome,
                 email,
                 senha,

@@ -16,7 +16,7 @@ export default function AdminUsuarios() {
             return;
         }
 
-        axios.get("${import.meta.env.VITE_API_URL}/api/usuarios", {
+        axios.get(`${import.meta.env.VITE_API_URL}/api/usuarios`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },

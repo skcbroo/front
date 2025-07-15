@@ -26,7 +26,7 @@ export default function AdminCreditos() {
 
     async function carregarCreditos() {
         try {
-            const res = await axios.get("${import.meta.env.VITE_API_URL}/api/creditos");
+            const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/creditos`);
             setCreditos(res.data);
         } catch (err) {
             console.error("Erro ao carregar créditos:", err);
@@ -60,7 +60,7 @@ export default function AdminCreditos() {
                 });
                 alert("Crédito atualizado com sucesso!");
             } else {
-                await axios.post("${import.meta.env.VITE_API_URL}/api/creditos", dados, {
+                await axios.post(`${import.meta.env.VITE_API_URL}/api/creditos`, dados, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 alert("Crédito cadastrado com sucesso!");
