@@ -71,9 +71,9 @@ export default function DetalhesCredito() {
           {/* Processo e Descrição */}
           <div className="space-y-1">
             <p className="my-4">
-  <strong>🔢 Processo:</strong> {credito.numeroProcesso || '—'}
-</p>
-<hr className="mb-4 border-t border-gray-300" />
+              <strong> Processo:</strong> {credito.numeroProcesso || '—'}
+            </p>
+            <hr className="mb-4 border-t border-gray-300" />
 
             <h2 className="text-lg font-semibold text-center text-blue-800 flex items-center justify-center gap-2">
                Descrição
