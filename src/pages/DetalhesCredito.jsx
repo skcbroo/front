@@ -70,7 +70,7 @@ export default function DetalhesCredito() {
 
             {/* Processo + Valores + Descrição */}
             <div className="space-y-1">
-                <p className="my-4">
+                <p className="mb-1">
                     <strong> Processo:</strong> {credito.numeroProcesso || '—'}
                 </p>
 
@@ -83,7 +83,7 @@ export default function DetalhesCredito() {
                         </span>
                     </p>
                     <p>
-                        <strong>🏷 Valor de aquisição:</strong>{' '}
+                        <strong> Valor de aquisição:</strong>{' '}
                         {credito.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
                     </p>
                     <p>
@@ -97,7 +97,7 @@ export default function DetalhesCredito() {
                 <hr className="my-4 border-t border-gray-300" />
 
                 <h2 className="text-lg font-semibold text-center text-blue-800 flex items-center justify-center gap-2">
-                    📝 Descrição
+                     Descrição
                 </h2>
                 <p className="text-justify">{credito.descricao || '—'}</p>
             </div>
