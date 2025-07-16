@@ -64,8 +64,8 @@ export default function DetalhesCredito() {
 
   return (
  <NavbarLayout>
-    <div className="flex justify-center items-center min-h-[80vh] px-0 sm:px-4">
-        <div className="bg-white text-black p-8 rounded-2xl shadow-xl w-full max-w-2xl select-none cursor-default space-y-4">
+    <div className="flex justify-center items-center min-h-[80vh] px-2 sm:px-4">
+        <div className="bg-white text-black p-6 sm:p-8 rounded-2xl shadow-xl w-[95%] sm:w-full sm:max-w-2xl select-none cursor-default space-y-4">
             <h1 className="text-2xl font-bold text-center text-blue-800">Detalhes do Crédito</h1>
 
             {/* Processo + Valores + Descrição */}
