@@ -25,7 +25,7 @@ export default function DetalhesCredito() {
     );
   }
 
-  const desagio = credito.preco / credito.valor;
+  const desagio = 1-(credito.preco / credito.valor);
   const totalCotas = credito.quantidadeCotas || 0;
   const cotasAdquiridas = credito.cotasAdquiridas ?? 0;
   const cotasDisponiveis = totalCotas - cotasAdquiridas;
