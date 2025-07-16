@@ -77,11 +77,13 @@ export default function DetalhesCredito() {
 
                         {/* Valores logo abaixo do processo */}
                         <div className="space-y-1">
-                            <p><strong>💰 Expectativa de recebimento:</strong> <span className="text-green-700">{credito.valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span></p>
-                            <p><strong>🏷️ Valor de aquisição:</strong> {credito.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
-                            <p><strong>📉 Deságio:</strong> <span className="text-red-600 font-semibold">{(desagio * 100).toFixed(2)}%</span></p>
+                            <p><strong> Expectativa de recebimento:</strong> <span className="text-green-700">{credito.valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span></p>
+                            <p><strong> Valor de aquisição:</strong> {credito.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
+                            <p><strong> Deságio:</strong> <span className="text-red-600 font-semibold">{(desagio * 100).toFixed(2)}%</span></p>       
                         </div>
+                      </p>
                         <hr className="my-4 border-t border-gray-300" />
+                  </p>
                         <h2 className="text-lg font-semibold text-center text-blue-800 flex items-center justify-center gap-2">
                              Descrição
                         </h2>
