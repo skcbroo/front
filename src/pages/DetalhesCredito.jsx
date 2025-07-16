@@ -71,8 +71,9 @@ export default function DetalhesCredito() {
                     {/* Processo + Valores + Descrição */}
                     <div className="space-y-1">
                         <p className="my-4">
-                            <strong>🔢 Processo:</strong> {credito.numeroProcesso || '—'}
-                        </p>
+                          </p>
+                            <strong> Processo:</strong> {credito.numeroProcesso || '—'}
+                        
 
                         {/* Valores logo abaixo do processo */}
                         <div className="space-y-1">
@@ -80,20 +81,13 @@ export default function DetalhesCredito() {
                             <p><strong>🏷️ Valor de aquisição:</strong> {credito.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
                             <p><strong>📉 Deságio:</strong> <span className="text-red-600 font-semibold">{(desagio * 100).toFixed(2)}%</span></p>
                         </div>
-
                         <hr className="my-4 border-t border-gray-300" />
-
                         <h2 className="text-lg font-semibold text-center text-blue-800 flex items-center justify-center gap-2">
-                            📝 Descrição
+                             Descrição
                         </h2>
                         <p className="text-justify">{credito.descricao || '—'}</p>
                     </div>
-
                     <hr className="border-gray-300" />
-
-
-                    <hr className="border-gray-300" />
-
                     {/* Cotas */}
                     <div className="space-y-1">
                         <p><strong>📦 Cotas totais:</strong> {totalCotas}</p>
