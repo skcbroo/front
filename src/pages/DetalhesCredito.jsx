@@ -38,7 +38,7 @@ export default function DetalhesCredito() {
       return;
     }
 
-    const numeroEmpresa = "5561996204646"; // Substitua pelo número real
+    const numeroEmpresa = "5561996204646";
     const mensagem = encodeURIComponent(
       `Olá, gostaria de adquirir cotas do crédito judicial:\n\n` +
       ` Processo: ${credito.numeroProcesso}\n` +
@@ -70,8 +70,12 @@ export default function DetalhesCredito() {
 
           {/* Processo e Descrição */}
           <div className="space-y-1">
-            <p><strong>🔢 Processo:</strong> {credito.numeroProcesso || '—'}</p>
-            <p><strong>📝 Descrição:</strong><br />{credito.descricao || '—'}</p>
+            <p><strong> Processo:</strong> {credito.numeroProcesso || '—'}</p>
+            <hr className="my-3 border-t border-gray-300" />
+            <h2 className="text-lg font-semibold text-center text-blue-800 flex items-center justify-center gap-2">
+               Descrição
+            </h2>
+            <p className="text-justify">{credito.descricao || '—'}</p>
           </div>
 
           <hr className="border-gray-300" />
@@ -114,7 +118,7 @@ export default function DetalhesCredito() {
                 onClick={confirmarAquisicao}
                 className="w-full py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition duration-150"
               >
-                ✅ Confirmar solicitação via WhatsApp
+                 Confirmar solicitação via WhatsApp
               </button>
             </>
           ) : (
