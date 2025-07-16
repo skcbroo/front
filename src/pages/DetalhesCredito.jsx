@@ -102,7 +102,7 @@ export default function DetalhesCredito() {
                                 onClick={confirmarAquisicao}
                                 className="w-full mt-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition cursor-pointer"
                             >
-                                Confirmar Aquisição via WhatsApp
+                                Confirmar Solicitação via WhatsApp
                             </button>
                         </>
                     ) : (
