@@ -102,7 +102,7 @@ export default function DetalhesCredito() {
                         <>
                             <hr className="border-gray-300" />
                             <div className="space-y-2">
-                                <label className="font-medium block" htmlFor="qtd">📤 Quantidade de cotas a adquirir:</label>
+                                <label className="font-medium block" htmlFor="qtd"> Quantidade de cotas a adquirir:</label>
                                 <input
                                     id="qtd"
                                     type="number"
