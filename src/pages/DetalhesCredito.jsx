@@ -74,7 +74,7 @@ export default function DetalhesCredito() {
           <strong> Processo:</strong> {credito.numeroProcesso || '—'}
         </p>
 
-        <div className="space-y-1">
+        
           <p>
             <strong> Expectativa de recebimento:</strong>{' '}
             <span className="text-green-700">
@@ -82,7 +82,7 @@ export default function DetalhesCredito() {
             </span>
           </p>
           <p>
-            <strong>🏷 Valor de aquisição:</strong>{' '}
+            <strong> Valor de aquisição:</strong>{' '}
             {credito.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
           </p>
           <p>
