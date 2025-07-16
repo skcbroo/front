@@ -6,7 +6,8 @@ export default function NavbarLayout({ children }) {
     return (
         <div className="min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
             {/* Navbar */}
-            <nav className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md px-6 py-4 flex items-center justify-between select-none">
+            <nav className="bg-blue-500 text-white shadow-md px-6 py-4 flex items-center justify-between select-none">
+
                 <div className="flex items-center gap-2">
                     <img
                         src="/logo3.png"
