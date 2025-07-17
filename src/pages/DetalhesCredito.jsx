@@ -153,8 +153,5 @@ export default function DetalhesCredito() {
         </div>
     </div>
 </NavbarLayout>
-
-
-
   );
 }
